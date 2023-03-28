@@ -1,0 +1,122 @@
+﻿MultiMonitor Cities is a simple mod that forces Cities Skylines to work with Nvidia Surround and ATi EyeFinity setups. Game won't recognize large resolutions normally. This mod won't be around forever though. Developers will most likely correct the resolution listing issue and this mod will be useless.
+
+[h1]Usage Warning:[/h1]
+
+This mod requires a high end system. The game will be stretched out to high resolutions. [b]Expect[/b] long loading times, low FPS, general fps drops. I do not take responsibility if your game crashes, if your save gets corrupt, or if your gpu(s) overheat to the point of being able to cook an egg. This mod only changes resolution at map load. This is a very [i]light weight[/i] mod.
+
+[b]Recommended Specs:[/b] (For being able to truly enjoy surround / eyefinity with game maxed out)
+
+* AMD Fx8320 or Fx8350 | Intel i5 or i7
+* 4gb+ ram
+* ATi R9 290 or equivalent | GTX 970 or 780 Ti
+
+[b]General Specs:[/b](For being able to just run surround / eyefinity)
+
+* Fx6300 or phenom x4| i3-2105 or equivalently higher
+* 4gb+ ram
+* XFX 7770 1GB or equivalent | GTX 660 2GB Ti or equivalent. 
+
+[b]My Specs:[/b] (I'm currently able to get 30fps on maxed out settings but i'm unable to fly around my city. FPS drops to 5-10 fps when moving)
+
+* Fx8320 4ghz Turbo
+* 8GB Ram
+* SLi GTX 660 2GB Ti OC
+
+[h1]Links[/h1]
+
+[b]Source Code:[/b]
+https://bitbucket.org/Nucloid/mmcs/src
+
+[h1]Other mods to use with MMC[/h1]
+
+* [b]Max Render Distance:[/b] [i] Using MMC at certain resolutions will cause things to not render at far distances. Use this mod to fix that. This will cause an FPS drop. - Suggested by @Baconfase[/i]
+http://steamcommunity.com/sharedfiles/filedetails/?id=414269767
+
+[h1]Freshly starting with MMC:[/h1]
+
+ [b]1)[/b] Make sure Eyefinity or Surround is activated.
+ [b]2)[/b] Sub to mod.
+ [b]3)[/b] Start game and load map.
+ [b]4)[/b] Alt tab out and forcefully quit game with either task manager or right click trayicon and close.
+ [b]5)[/b] use notepad++ or any xml reader to open "MMC_Config".
+ [b]6)[/b] Multi Step
+   [b]-----)[/b] Set MainToolStripScreen & currentScreen to which monitor you want the UI on.(Example: 0= center | -1600 = left screen | 1600 = right screen | Full resolution = 4800x900(1600x3))
+   [b]-----)[/b] Set StatisticsButtonHeight to the top corner amount of your resolution. This is the statistics button
+   [b]-----)[/b] Set InfoViewsContainerHeight to the top corner amount of your resolution but make sure its' slightly more than StatisticsButtonHeight. InfoViewsContainerHeight is the container panel with all the statistic buttons.
+   [b]-----)[/b] Set InfoPanelHeight to 44 less than your total height. InfoPanelHeight is your city name, current profit, etc.
+   [b]-----)[/b] Set MainToolStripHeight to either 0 or 1. This may need to be custom sized for specific heights.
+   [b]-----)[/b] Set ThumbnailBarHeight to 115 less than your total height. This is your city item bar (roads, buildings, etc)
+   [b]-----)[/b] Set TSBarHeight 92 less than your total height. This is your main UI bar.
+   [b]-----)[/b] Set FullScreenContainerHeight 95 less than your total height. This is your pause screen orange border
+   [b]-----)[/b] Set isFullScreen to either true or false. This is bool (yes/no) check if you want fullscreen or windowed.
+   [b]-----)[/b] Set MultiScreenWidth to Surround / Eyefinity width (Mine is 4800).
+   [b]-----)[/b] Set MultiScreenHeight to Surround / Eyefinity height (Mine is 900).
+   [b]-----)[/b] Set SingleScreenWidth to what your normal single screen width would be (Mine is 1600).
+   [b]-----)[/b] Set SingleScreenHeight to what your normal single screen height would be (Mine is 900).
+   [b]-----)[/b] Set FOV to anything between 30 & 70. I recommend 30 fov. Anything less than or greater than these two numbers [b]WILL BREAK THE CAMERA[/b]
+   [b]-----)[/b] Save the XML file.
+[b]7)[/b] Restart the game.
+[b]8)[/b] Load a game and the screen should be forced to your config size and the UI [b]should[/b] be forced to your center screen.
+
+[h1]Updating MMC:[/h1]
+
+[b]1)[/b] Delete the current config.
+[b]3)[/b] Start game and load map.
+[b]4)[/b] Alt tab out and forcefully quit game with either task manager or right click trayicon and close.
+[b]5)[/b] use notepad++ or any xml reader to open "MMC_Config".
+[b]6)[/b] Multi Step
+   [b]-----)[/b] Set MainToolStripScreen & currentScreen to which monitor you want the UI on.(Example: 0= center | -1600 = left screen | 1600 = right screen | Full resolution = 4800x900(1600x3))
+   [b]-----)[/b] Set StatisticsButtonHeight to the top corner amount of your resolution. This is the statistics button
+   [b]-----)[/b] Set InfoViewsContainerHeight to the top corner amount of your resolution but make sure its' slightly more than StatisticsButtonHeight. InfoViewsContainerHeight is the container panel with all the statistic buttons.
+   [b]-----)[/b] Set InfoPanelHeight to 44 less than your total height. InfoPanelHeight is your city name, current profit, etc.
+   [b]-----)[/b] Set MainToolStripHeight to either 0 or 1. This may need to be custom sized for specific heights.
+   [b]-----)[/b] Set ThumbnailBarHeight to 115 less than your total height. This is your city item bar (roads, buildings, etc)
+   [b]-----)[/b] Set TSBarHeight 92 less than your total height. This is your main UI bar.
+   [b]-----)[/b] Set FullScreenContainerHeight 95 less than your total height. This is your pause screen orange border
+   [b]-----)[/b] Set isFullScreen to either true or false. This is bool (yes/no) check if you want fullscreen or windowed.
+   [b]-----)[/b] Set MultiScreenWidth to Surround / Eyefinity width (Mine is 4800).
+   [b]-----)[/b] Set MultiScreenHeight to Surround / Eyefinity height (Mine is 900).
+   [b]-----)[/b] Set SingleScreenWidth to what your normal single screen width w
+[b]7)[/b] Restart the game.
+[b]8)[/b] Load a game and the screen should be forced to your config size and the UI [b]should[/b] be forced to your center screen.
+
+[h1]Config[/h1]
+[code]  <MainToolStripScreen>0</MainToolStripScreen>
+  <currentScreen>0</currentScreen>
+  <InfoViewsContainerHeight>0</InfoViewsContainerHeight>
+  <StatisticsButtonHeight>0</StatisticsButtonHeight>
+  <InfoPanelHeight>0</InfoPanelHeight>
+  <MainToolStripHeight>0</MainToolStripHeight>
+  <ThumbnailBarHeight>0</ThumbnailBarHeight>
+  <TSBarHeight>0</TSBarHeight>
+  <FullScreenContainerHeight>0</FullScreenContainerHeight>
+  <MainToolStripScreen>0</MainToolStripScreen>
+  <CurrentScreen>0</CurrentScreen>
+  <MultiScreenWidth>0</MultiScreenWidth>
+  <MultiScreenHeight>0</MultiScreenHeight>
+  <SingleScreenWidth>0</SingleScreenWidth>
+  <SingleScreenHeight>0</SingleScreenHeight>
+  <CameraFov>30</CameraFov>
+  <isFullScreen>true</isFullScreen>[/code]
+
+[h1]Known Issues:[/h1]
+
+* Specific ultra widths may not work with unity engine. You may see blackbars on the side of your outter monitors. You can attempt to force the screen size by starting game with MMC enabled and then pressing [i]alt-enter[/i].
+
+[h1]Development:[/h1]
+
+[b]Todo:[/b] 
+
+* Fix camera. Camera view is adjusted to work on a matrix. I need to figure out how to manipulate that now.
+* Add a way to allow user to change main UI to different screens (Not difficult, just need to add another node to config).
+* Change main menu background sprite to something bigger (up to 4800x900) .Currently UI is stuck to center screen (1920x1080).
+
+[b]Changelogs:[/b]
+
+[b]v4[/b]- Replaced all hardcoded height adjustments for more config nodes. You will need to know some basic math and have some patience for lining up your UI. Added a config node for going fullscreen / windowed. Removed hardcoded 60hz refresh rate so another mod will work.
+
+[b]v3[/b]- Added way to adjust the UI so that its' [i]natively[/i] forced to the center screen. You can set it for any other screen though as long as you know some basic math. Config nodes were added for storing the UI size.
+
+[b]v2[/b]- Added FOV option. For my 4800x900 resolution, i'm using 30 fov. This works beautifully.
+
+[b]v1[/b] - First push. Forces monitor to change resolution when loading map and resets the resolution back to original set size.

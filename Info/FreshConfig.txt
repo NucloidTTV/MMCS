@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MTScurrentScreen>0</MTScurrentScreen>
+  <currentScreen>0</currentScreen>
+  <IVCHeight>0</IVCHeight>
+  <InfoMenuHeight>0</InfoMenuHeight>
+  <InfoPanelHeight>0</InfoPanelHeight>
+  <MTSHeight>0</MTSHeight>
+  <TNBHeight>0</TNBHeight>
+  <TSBHeight>0</TSBHeight>
+  <FullScreenContainerHeight>0</FullScreenContainerHeight>
+  <MTSCurrentScreen>0</MTSCurrentScreen>
+  <CurrentScreen>0</CurrentScreen>
+  <MultiScreenWidth>0</MultiScreenWidth>
+  <MultiScreenHeight>0</MultiScreenHeight>
+  <SingleScreenWidth>0</SingleScreenWidth>
+  <SingleScreenHeight>0</SingleScreenHeight>
+  <CameraFov>30</CameraFov>
+  <isFullScreen>true</isFullScreen>
+</Config>
